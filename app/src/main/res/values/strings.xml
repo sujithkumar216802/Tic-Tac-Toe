@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="single_player">SINGLE PLAYER</string>
+    <string name="dual_player">DUAL PLAYER</string>
+    <string name="next">NEXT</string>
+    <string name="name">Name</string>
+    <string name="rounds">Rounds : </string>
+    <string name="eg_sam">Eg. Sam</string>
+    <string name="score">Score</string>
+    <string name="menu">MENU</string>
+    <string name="reload_button">reload button</string>
+    <string name="scoreboard">SCOREBOARD :</string>
+    <string name="won"><b>%s</b> WON!</string>
+    <string name="tie">TIE!</string>
+    <string name="scoregameholder">%s \n %d</string>
+    <string name="roundgameholder">ROUND :\n %d/%d </string>
+    <string name="by_s_sujith_kumar_108110126">By S Sujith Kumar -108110126</string>
+</resources>

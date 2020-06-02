@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/gameHolder"
+        android:name="com.sujithkumar.tictactoe.GameHolder"
+        android:label="GameHolder">
+        <action
+            android:id="@+id/action_gameHolder_to_scoreBoard"
+            app:destination="@id/scoreBoard"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpTo="@id/options"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/options"
+        android:name="com.sujithkumar.tictactoe.Options"
+        android:label="Options">
+        <action
+            android:id="@+id/action_options_to_input"
+            app:destination="@id/input"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreBoard"
+        android:name="com.sujithkumar.tictactoe.ScoreBoard"
+        android:label="ScoreBoard">
+        <action
+            android:id="@+id/action_scoreBoard_to_options"
+            app:destination="@id/options"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpTo="@id/options"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_scoreBoard_to_input"
+            app:destination="@id/input"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpTo="@id/options"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.sujithkumar.tictactoe.SplashScreen"
+        android:label="SplashScreen">
+        <action
+            android:id="@+id/action_splashScreen_to_options"
+            app:destination="@id/options"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/input"
+        android:name="com.sujithkumar.tictactoe.Input"
+        android:label="Input">
+        <action
+            android:id="@+id/action_input_to_gameHolder"
+            app:destination="@id/gameHolder"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpTo="@id/options"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>
